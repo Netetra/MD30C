@@ -3,6 +3,7 @@
 MD30C Moter = MD30C(13,11);
 
 void setup() {
+    pinMode(11, OUTPUT);
     MD30C.init();
 }
 

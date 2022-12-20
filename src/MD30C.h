@@ -16,7 +16,7 @@ enum class MODE {
 
 class MD30C {
     public:
-        MD30C(uint8_t channel, uint8_t pwm_pin, uint8_t dir_pin);
+        MD30C(uint8_t pwm_pin, uint8_t dir_pin);
         void init();
         void rotation(MODE mode,uint8_t pwm = 0);
         void forward(uint8_t pwm);
@@ -25,7 +25,6 @@ class MD30C {
     private:
         uint8_t dir_pin;
         uint8_t pwm_pin;
-        uint8_t channel;
 };
 
 #endif
